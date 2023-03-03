@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Messagerie Web</title>
+  <link rel="stylesheet" href="Test.css">
+</head>
+<body style="height:100%;overflow: hidden;">
+  <div class ="Titre">
+    Inlook
+    
+    <input type="search"
+    id="myInput"; 
+    onkeyup="recherche()"
+    style="padding:15px;
+    border-width: 3px;
+    border-color:blue;
+    border-radius: 10px;
+    vertical-align: middle;
+    width:80%"
+    placeholder="Chercher un nom ou une adresse";>
+    &#128269;
+  </div>
+
+  <div class="Toolbar">
+    <button class="Nouveau_Message" onclick="NewMail()">
+      Nouveau Message
+    </button>
+  </div>
+  
+  <div class="Boite_courriels">
+    Emails envoyés
+  </div>
+
+
+  <div class="Aperçu_email">
+    <div id="formulaire" style="display:none;">
+      <label for="Titre">Titre:</label><br>
+      <input type="text" id="Titre" name="Titre"
+      style ="width:98%; margin-left: 5px;">
+      <label for="Adresse">À:</label><br>
+      <input type="text" id="Adresse" name="Adresse"
+      style ="width:98%; margin-left: 5px;"><br>
+      <label for="Contenu">Contenu:</label><br>
+      <input type="text" id="Contenu" name="Contenu"
+      style ="width:98%; height: 340px; margin-left: 5px;
+      vertical-align: top; text-align: left;">
+      <button style="margin-left: 5px;margin-top: 8px;" onclick="addMail()">
+       Envoyer &rArr;
+      </button>
+      <button style="height: 27px;" onclick="deleteMail()">
+       Abandonner &#10007;
+      </button>
+    </div>
+ </div>
+
+  <div class="Courriels">
+    <!-- <div class="liste">
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+      <div class="Carte">
+        <div><a>Nom</a></div>
+        <div><a>Adresse</a></div>
+      </div>
+    </div>  
+  </div>   -->
+
+    <ul class="liste" id="food">
+      <li><a>PB and J</a></li>
+      <li><a>Orange</a></li>
+      <li><a>Apple</a></li>
+      <li><a>Lettuce</a></li>
+      <li><a>Juice</a></li>
+      <li><a>Cereal</a></li>      
+    </ul> 
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    Par : David Azzie, Marc-Olivier Bastien, Félix Harvey et Santiago Soto
+  </div> 
+  
+ 
+  
+  
+  <script src="Test.js"></script>
+</body>
+</html>
